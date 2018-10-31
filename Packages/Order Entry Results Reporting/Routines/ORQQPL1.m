@@ -1,5 +1,7 @@
-ORQQPL1 ; ALB/PDR,REV,ISL/JER/TC - PROBLEM LIST FOR CPRS GUI ;Oct 30, 2018@13:55
- ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,148,173,203,206,249,243,280,306,361,385,350**;Dec 17, 1997;Build 77
+ORQQPL1 ; ALB/PDR,REV,ISL/JER/TC - PROBLEM LIST FOR CPRS GUI ;Oct 31, 2018@10:35
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**10,85,148,173,203,206,249,243,280,306,361,385,350,OSE/SMH**;Dec 17, 1997;Build 77
+ ; OSE/SMH changes (c) Sam Habiel 2018
+ ; Licensed under Apache 2.0
  ;
  ;------------------------- GET PROBLEM FROM LEXICON -------------------
  ;
@@ -97,6 +99,9 @@ EDLOAD(RETURN,DA) ; LOAD  EDIT ARRAYS
  ;
 LOADFLDS(RETURN,NAM,TYP,I) ; LOAD FIELDS FOR TYPE OF ARRAY
  N S,V,CVP,PN,PID
+ ; OSE/SMH Plan VI - Change V from $C(254) to "|" as $C(254) is a not a valid UTF-8 string
+ ; | chosen as it is not commonly used in VistA except in WP fields as placeholders
+ ; This change needs a change in CPRS as well as it previously relied on V being $C(254).
  S S="",V="|"
  F  S S=$O(@NAM@(S)) Q:S=10  D
  . S RETURN(I)=TYP_V_S_V_@NAM@(S)
