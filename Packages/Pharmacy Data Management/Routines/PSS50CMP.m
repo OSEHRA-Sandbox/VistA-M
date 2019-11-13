@@ -106,4 +106,3 @@ SETACQ ;
  ...S ^TMP($J,LIST,+PSS(1),"AL",PSS504,5)=$P(PSS504ND,"^",6)
  S ^TMP($J,LIST,+PSS(1),"AL",0)=$S(PSS504C:PSS504C,1:"-1^NO DATA FOUND")
  Q
-                

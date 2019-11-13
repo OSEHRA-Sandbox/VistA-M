@@ -171,4 +171,3 @@ CNVIV(DFN,ON)        ;Convert IV orders.
  .S PSJOI="",ND=$G(^PS(55,DFN,"IV",ON,6)) F ADS="AD","SOL" I 'PSJOI F ON1=0:0 S ON1=$O(^PS(55,DFN,"IV",ON,ADS,ON1))  Q:'ON1!PSJOI  S XX=+$G(^PS(55,DFN,"IV",ON,ADS,ON1,0)) D
  ..S:XX PSJOI=$S(ADS="AD":$P($G(^PS(52.6,XX,0)),U,11),1:$P($G(^PS(52.7,XX,0)),U,11)) I PSJOI  S ^PS(55,DFN,"IV",ON,.2)=PSJOI_U_$P(ND,U,2,3)
  Q
-  

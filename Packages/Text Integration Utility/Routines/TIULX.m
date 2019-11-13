@@ -177,4 +177,3 @@ HASDOCMT(DFN) ;Does patient have ANY entries in TIU DOCUMENT file 8925?
  ;Any entries includes original documents, addenda, components
  ;(like S in SOAP notes), "deleted"  documents, retracted documents, etc!
  Q $O(^TIU(8925,"C",+$G(DFN),0))>0
-         

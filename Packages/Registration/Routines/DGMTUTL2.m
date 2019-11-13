@@ -111,4 +111,3 @@ ZDP(VAFIEN,DEPIEN) ; Build ZDP the data string for the veteran
  S $P(ZDP,U,9)=$E($P(ZDP,U,9),1,3)+1700_$E($P(ZDP,U,9),4,7)
  ;
  Q ZDP
-                                                                                

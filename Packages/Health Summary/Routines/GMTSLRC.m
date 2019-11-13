@@ -51,4 +51,3 @@ WRT ; Writes Chemistry & Hematology Component
  . I ($L(REF)>12),($L(REF)<15) S TAB=80-($L(REF))
  . W ?TAB,REF,!
  Q
-  

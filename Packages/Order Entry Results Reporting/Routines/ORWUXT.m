@@ -7,4 +7,3 @@ VAL(VAL,P1,P2,P3)       ; return a string
  Q
 REF(REF,P1,P2,P3)       ; return a global reference
  Q
-  

@@ -29,4 +29,3 @@ EN2(DFN,ON)     ;
  S PSGTOL=2,PSGUOW=DUZ,PSGTOO=1
  I +PSJSYSL>1 S $P(^PS(55,PSGP,5,DA,7),U)=PSGDT S:$P(^(7),U,2)="" $P(^(7),U,2)="N"_$S($P(^PS(55,PSGP,5,DA,0),U,24)="E":"E",1:"") S PSGOP=DFN D ^PSGLW
  Q
-  

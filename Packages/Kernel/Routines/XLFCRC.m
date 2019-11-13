@@ -55,4 +55,3 @@ ZXOR(a,b,w) NEW I,M,R
  . QUIT
  QUIT R
  ;
- 

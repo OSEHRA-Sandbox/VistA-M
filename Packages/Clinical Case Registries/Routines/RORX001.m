@@ -242,4 +242,3 @@ SELRULES(IENS,PARTAG) ;
  ;
  Q 0
  ;
-         

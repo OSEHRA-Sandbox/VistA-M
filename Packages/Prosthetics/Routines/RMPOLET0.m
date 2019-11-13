@@ -185,4 +185,3 @@ UPDLTR(DA,VAL)  ; Update 'Letter to be sent' in Prosthetics Patient File
  Q
  ;
 EXIT G EXIT^RMPOLETA
-  

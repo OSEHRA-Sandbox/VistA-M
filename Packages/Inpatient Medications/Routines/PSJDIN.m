@@ -195,9 +195,3 @@ DDNF(PSJDD)     ;
  ;*PSJDD: Dispense drug IEN
  ;
  Q $S($P($G(^PSDRUG(+PSJDD,0)),U,9)=1:" *N/F*",1:"")
-        
-  
-   
-       
-  
-         

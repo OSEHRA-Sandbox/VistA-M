@@ -23,7 +23,6 @@ PRE ; pre-init
  D CHGNM("ASSIST-WHOv3","ASSIST-WHOV3")
  D CHGNM("KATZ-ADL-6pt","KATZ-ADL-6PT")
  D CHGNM("KATZ-ADL-18pt","KATZ-ADL-18PT")
- 
  ;
  ; set up for Reminder Exchange install of PCL-5 fixes
  D DELEXE^PXRMEXSI("EXARRAY","YS121PST")
